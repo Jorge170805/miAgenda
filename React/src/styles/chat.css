@@ -1,0 +1,264 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 2000px;            /* Máximo ancho razonable */
+  margin: 30px auto;
+  padding: 30px 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.edit-save {
+  background-color: #27ae60;
+}
+
+.edit-cancel {
+  background-color: #c0392b;
+}
+
+.headerMensaje {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.opt-btn {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  padding: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.btn-icon:hover {
+  background-color: #e0e0e0;
+  border-radius: 6px;
+}
+
+.message {
+  text-align: left;
+  margin-top: 20px;
+  color: #333;
+  background-color: #fff8c4;
+  border: 1px solid #d58b3c;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mensaje h4 {
+  margin: 0px;  
+  margin-bottom: 10px;
+}
+
+.mensaje p {
+  margin: 0px;
+}
+
+.mensaje p:last-child {
+  margin-top: 15px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.mensaje {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #90caf9;
+  background-color: #e3f2fd;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  padding: 15px;
+  width: 40%;
+  margin: 10px;
+  word-break: break-word;
+}
+
+.miMensaje {
+  align-self: flex-end;
+  background-color: #d1f5d3;
+  border-color: #81c784;
+}
+
+textarea {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #96b9e6;
+  border-radius: 12px;
+  padding: 20px;
+  height: 625px;
+  overflow-y: auto;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+.btn-volver {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-volver:hover {
+  background-color: #5a6268;
+}
+
+.input-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-buttons-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+.input-buttons-left input[type="text"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.input-buttons-right {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.boton-volver {
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.boton-volver:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px !important;
+    min-height: auto;
+  }
+
+  .chat {
+    padding: 10px;
+    height: 500px; /* ajusta si quieres más o menos espacio */
+  }
+
+  .mensaje {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    margin: 6px 0;
+  }
+
+  .mensaje p:last-child {
+    font-size: 11px;
+  }
+
+  .miMensaje {
+    align-self: flex-end;
+  }
+
+  textarea {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .input-buttons-left input {
+    width: 100%;
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .input-buttons,
+  .input-buttons-left {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  button,
+  .boton-volver {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .boton-volver {
+    justify-content: center;
+    width: 100%;
+  }
+}
